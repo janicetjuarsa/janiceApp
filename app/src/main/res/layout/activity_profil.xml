@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".janiceActivity">
+    tools:context=".ProfilActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,59 +18,50 @@
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
 
-        <TextView
-            android:id="@+id/txvJudul"
+        <EditText
+            android:id="@+id/edtNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kalkulator Sederhana : Janice"
-            android:textSize= "12pt"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/edtProdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Program Studi" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="email@student.uph.edu"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:layout_marginTop="30dp"
             />
-
-        <EditText
-            android:id="@+id/edtNilaiA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="Nilai Pertama (A)" />
-
-        <EditText
-            android:id="@+id/edtNilaiB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="Nilai Kedua (B)" />
-
-        <Button
-            android:id="@+id/btnTambah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tambah" />
-
-        <Button
-            android:id="@+id/btnKali"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kali"/>
-
-        <Button
-            android:id="@+id/btnBagi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bagi" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hasil" />
 
         <TextView
             android:id="@+id/txvHasil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Angka"
-            android:textSize="10pt"/>
+            android:textAlignment="center"
+            android:textSize="12pt"
+            android:text="Nama \n Email \n Program Studi" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
