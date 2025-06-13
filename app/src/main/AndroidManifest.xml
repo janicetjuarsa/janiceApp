@@ -13,7 +13,13 @@
         android:theme="@style/Theme.JaniceApp"
         tools:targetApi="31">
         <activity
-            android:name=".janiceActivity"
+            android:name=".TodoListActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".dashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JaniceApp">
@@ -23,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".janiceActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -31,4 +39,5 @@
             android:name=".ProfilActivity"
             android:exported="false" />
     </application>
+
 </manifest>
